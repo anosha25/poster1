@@ -1,0 +1,40 @@
+
+
+#triangle {
+  transition: points 0.5s ease;
+  z-index: auto; 
+}
+
+#rhombus {
+  z-index: auto;
+}
+
+.shape {
+fill:transparent; 
+stroke:black; 
+stroke-width: 3;
+}
+
+.shape:hover{
+  fill: black;
+}
+
+#recCircle{
+  display: none;
+}
+
+#triangle, #rhombus, #circle {
+  transition: all 0.5s ease; /* Apply transition to all properties */
+}
+
+body {
+  background-color: #a99fb5;
+}
+
+#titles {
+  position: absolute;
+  top: 100px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  z-index: 2; /* Ensure titles appear above shapes */
+  color: #c6e906; /* Set title color */
+}
