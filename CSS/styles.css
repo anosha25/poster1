@@ -40,3 +40,10 @@ body {
   z-index: 2; 
   color: #c6e906; 
 }
+
+
+#container {
+    
+  margin: auto;
+  text-align: center;
+}
