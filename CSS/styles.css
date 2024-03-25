@@ -13,6 +13,8 @@
 fill:transparent; 
 stroke:black; 
 stroke-width: 3;
+transition: all 0.5s ease; 
+
 }
 
 .shape:hover{
@@ -24,7 +26,7 @@ stroke-width: 3;
 }
 
 #triangle, #rhombus, #circle {
-  transition: all 0.5s ease; /* Apply transition to all properties */
+  transition: all 0.5s ease; 
 }
 
 body {
@@ -33,8 +35,8 @@ body {
 
 #titles {
   position: absolute;
-  top: 100px; /* Adjust top position as needed */
-  left: 20px; /* Adjust left position as needed */
-  z-index: 2; /* Ensure titles appear above shapes */
-  color: #c6e906; /* Set title color */
+  top: 100px; 
+  left: 20px; 
+  z-index: 2; 
+  color: #c6e906; 
 }
