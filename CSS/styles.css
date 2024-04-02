@@ -1,4 +1,30 @@
 
+#tri{
+width: 500px;
+height: 500px;
+background:black ;
+}
+
+#tri.clicked {
+  animation: rotate 0.2s;
+  animation-iteration-count: 1;
+  clip-path: polygon(80% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+@keyframes  rotate {
+  0% {clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
+  100% {clip-path: polygon(80% 0%, 80% 0%, 100% 100%, 0% 100%);}
+
+
+}
+
+#myTri {
+  clip-path: polygon(80% 0%, 80% 0%, 100% 100%, 0% 100%);
+  width: 500px;
+  height: 500px;
+  background:red ;
+}
+
 
 #triangle {
   transition: points 0.5s ease;
@@ -13,7 +39,7 @@
 fill:transparent; 
 stroke:black; 
 stroke-width: 3;
-transition: all 0.5s ease; 
+transition: all 0.2s ease; 
 
 }
 
@@ -26,7 +52,42 @@ transition: all 0.5s ease;
 }
 
 #triangle, #rhombus, #circle {
-  transition: all 0.5s ease; 
+  transition: all 0.2s ease; 
+}
+
+.external_links a {
+  color: #c6e906;
+}
+
+#anther_kiley {
+  font-size: 70px;
+font-family: "angie-sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+line-height: 40px;
+  z-index: 1;
+  display: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  width: 1200px;
+  transform: rotate(-4deg);
+}
+
+
+
+button {
+  float: right;
+  background-color: black;
+  border: none;
+  color:#c6e906;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
 }
 
 body {
@@ -34,11 +95,61 @@ body {
 }
 
 #titles {
+  
+  z-index: 2; 
+  color: #c6e906; 
+  pointer-events:none;
+
+}
+
+
+#triangle-up {
+  z-index: auto;
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  width: 0;
+  height: 0;
+  border-top: 600px solid black;
+      border-right: 600px solid transparent;
+  transform: rotate(-100deg);
+}
+
+.circle2{
+  position: absolute;
+    border: 3px solid black;
+    background-color: transparent;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 700px;
+    border-radius: 500px;
+    transform: rotate(-4deg);
+
+}
+
+.circle2:hover{
+   background-color: black;
+}
+h1 {
   position: absolute;
   top: 100px; 
   left: 20px; 
-  z-index: 2; 
-  color: #c6e906; 
+  font-family: "termina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+
+h2 {
+  line-height: 80px;
+  position: absolute;
+  top: 380px; 
+  left: 1310px; 
+  font-size: 50px;
+  font-family: "angie-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 

@@ -9,35 +9,56 @@
   <link rel="stylesheet" href="CSS/styles.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="https://use.typekit.net/mce6vyv.css">
+  </head>
 
 <body>
+  <div class="myTri"></div>
+  <div class="star"></div>
+
+  <div class="circle2"></div>
+  <section class="event" id="anther_kiley">
+    <button id="exitAnther">X</button>
+    <h3>Anther Kiley</h3>
+    <div class="date">September 25, 2023</div>
+    <div class="time">3:10pm</div>
+    <div class="location">100 McCaul St., Room 230</div>
+    <div class="info">
+      <p> Anther Kiley is a designer, artist, and educator living and practicing in Providence, RI. He teaches in the graphic design department at RISD while maintaining a professional graphic design practice and a robust studio art practice. If that’s not enough he also runs Card Kits—a line of sustainable architectural children’s toys inspired by own childhood. His work explores the symbolic and poetic aspects of functionalist forms in the built environment through sculpture, photography, digital image making, and collage. </p>
+      <div class="external_links">
+        <a href="http://antherkiley.com/">antherkiley.com</a>
+      </div>
+    </div>
+  </section>
+  <div id="triangle-up"></div>
+  <div id="tri" onclick="this.classList.toggle('clicked')"></div>
   <div id="titles">
-    <h1>Research Methods of Graphic Design</h1>
-    <h2>Fall 2023 Lecture Series</h2>
+    <h1>Research Methods <br id="of"> of<br> Graphic Design</h1>
+    <h2>Fall 2023 <br> Lecture Series</h2>
+    
   </div>
   <svg height="1000" width="2000" xmlns="http://www.w3.org/2000/svg">
-    <polygon id="triangle" class="shape" points="120,300 850,800 850,800 230,910">
-      <animate attributeName="points" dur="5s" repeatCount="definite" 
+     <polygon id="triangle" class="shape" points="120,300 850,800 850,800 230,910"/> 
+       <triangle dur="5s" repeatCount="definite" 
       values="100,50 1000,50  1000,710  100,710;
               120,300 850,800 850,800 230,910;" />
-    </polygon>
+    </polygon> 
 
-    <polygon id="rhombus" class="shape" points="300,10 900,10 720,490 100,490" >
-      <animate attributeName="points" dur="5s" repeatCount="definite" 
+    <polygon id="rhombus" class="shape" points="300,10 900,10 720,490 100,490" />
+      <!-- <rhombus ="points" dur="5s" repeatCount="definite" 
       values="100,50 1000,50  1000,710  100,710;
       1275,15 1755,605 1595,905 1255,755;
       1270,10 1750,600 1590,900 1250,750" />
-    </polygon>
+    </polygon> -->
 
-    <circle id="circle" class="shape" r="320" cx="1000" cy="480" />
-    <polygon id="recCircle" points="100,50 1000,50  1000,710  100,710" />
+    <!-- <circle id="circle" class="shape" r="320" cx="1000" cy="480" />
+    <polygon id="recCircle" points="100,50 1000,50  1000,710  100,710" /> -->
 
     <polygon id="pointyGuy" class="shape" points="1270,10 1750,600 1590,900 1250,750">
-      <animate attributeName="points" dur="5s" repeatCount="definite" 
+      <!-- <pointyGuy="points" dur="5s" repeatCount="definite" 
       values="100,50 1000,50  1000,710  100,710;
       1275,15 1755,605 1595,905 1255,755;
-      1270,10 1750,600 1590,900 1250,750" />
+      1270,10 1750,600 1590,900 1250,750" /> -->
     </polygon>
 
 
