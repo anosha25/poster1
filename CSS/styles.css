@@ -8,6 +8,12 @@
   background-color: pink;
   offset: left 200px;
 } */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(LouizeTrial-Italic.otf);
+}
+
 #tri{
 
 position: absolute;
@@ -215,9 +221,10 @@ h2 {
   top: 380px; 
   left: 1310px; 
   font-size: 50px;
-  font-family: "angie-sans", sans-serif;
+  font-family: myFirstFont;
   font-weight: 400;
   font-style: normal;
+  font-size: 80px;
 }
 
 

@@ -81,8 +81,8 @@ $(document).ready(function(){
             $("#exitEmi").click(function(){
                 $("#pointyGuy").attr('points', '1270,10 1750,600 1590,900 1250,750');
                 $("#pointyGuy").removeClass('clicked');
-                $("#takahashi_kuan").fadeOut(); // Optionally, hide any associated content
-                $("#titles").css('z-index', '2'); // Reset the z-index of titles if needed
+                $("#takahashi_kuan").fadeOut(); 
+                $("#titles").css('z-index', '2'); 
             });
         });
 
