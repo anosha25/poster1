@@ -13,9 +13,11 @@
   </head>
 
 <body>
-  <div class="myTri"></div>
-  <div class="star"></div>
 
+  <div id="titles">
+    <h1>Research Methods <br> of<br> Graphic Design</h1>
+    <h2>Fall 2023 <br> Lecture Series</h2>
+    
   <div class="circle2"></div>
   <section class="event" id="anther_kiley">
     <button id="exitAnther">X</button>
@@ -30,19 +32,20 @@
       </div>
     </div>
   </section>
-  <div id="triangle-up"></div>
+
+  
+  <!-- <div id="triangle-up"></div> -->
   <div id="tri" onclick="this.classList.toggle('clicked')"></div>
-  <div id="titles">
-    <h1>Research Methods <br id="of"> of<br> Graphic Design</h1>
-    <h2>Fall 2023 <br> Lecture Series</h2>
-    
+  <div id="newRhombus"></div>
+
+
   </div>
   <svg height="1000" width="2000" xmlns="http://www.w3.org/2000/svg">
-     <polygon id="triangle" class="shape" points="120,300 850,800 850,800 230,910"/> 
+     <!-- <polygon id="triangle" class="shape" points="120,300 850,800 850,800 230,910"/> 
        <triangle dur="5s" repeatCount="definite" 
       values="100,50 1000,50  1000,710  100,710;
               120,300 850,800 850,800 230,910;" />
-    </polygon> 
+    </polygon>  -->
 
     <polygon id="rhombus" class="shape" points="300,10 900,10 720,490 100,490" />
       <!-- <rhombus ="points" dur="5s" repeatCount="definite" 
@@ -54,24 +57,49 @@
     <!-- <circle id="circle" class="shape" r="320" cx="1000" cy="480" />
     <polygon id="recCircle" points="100,50 1000,50  1000,710  100,710" /> -->
 
-    <polygon id="pointyGuy" class="shape" points="1270,10 1750,600 1590,900 1250,750">
-      <!-- <pointyGuy="points" dur="5s" repeatCount="definite" 
-      values="100,50 1000,50  1000,710  100,710;
-      1275,15 1755,605 1595,905 1255,755;
-      1270,10 1750,600 1590,900 1250,750" /> -->
+    <polygon id="pointyGuy" class="shape" points="1270,10 1750,600 1590,900 1250,750" >
+      <animate attributeName="points" dur="0.5s" begin="click" fill="freeze"
+               from="1270,10 1750,600 1590,900 1250,750"
+               to="500,50 1500,50  1500,910  500,910" />
     </polygon>
-
-
-
   </svg>
 
+ 
+  <section class="event" id="takahashi_kuan">
+    <button id="exitEmi">X</button>
+    <h3>Emi Takahashi & Michelle Kuan</h3>
+    <div class="date">October 23, 2023</div>
+    <div class="time">3:10pm</div>
+    <div class="location">100 McCaul St., Room 230</div>
+    <div class="info">
+      <p> Emi Takahashi is an artist and graphic designer based in Toronto. Her practice involves experimenting with alternative & analog forms of image-making, glyph & type design, archival projects, and multidisciplinary collaborations. Michelle Kuan is a Chinese Canadian artist, designer, and writer based in Montréal. Working between social practice, digital arts, and experimental publishing, she explores novel ways of documenting personal and collective narratives, the power of somatic memory, and decolonial archival futures. Their research laden practices operate both individually and collectively to create a mix of client-based and self-initiated work such as their here-there stories project devoted to collecting the stories of the asian canadian diaspora. </p>
+      <div class="external_links">
+        <a href="https://emitakahashi.ca/" target="_blank">emitakahashi.ca</a>
+      </div>
+    </div>s
+  </section>
 
-
+  <section class="event" id="e_roon_kang">
+    <button id="exitERoon">X</button>
+    <h3>E Roon Kang</h3>
+    <div class="date">November 13, 2023</div>
+    <div class="time">3:10pm</div>
+    <div class="location">Via Zoom</div>
+    <div class="info">
+      <p> E Roon Kang operates Math Practice, an interdisciplinary design and research studio with interest in studying, evaluating, and criticizing everyday systems and their pursuit of efficiency. He is also a co-founder of 908A a research initiative and consultancy that focuses on constructing new design tools. </p>
+      <p> E Roon is the Chair and Associate Professor of Graphic Design at California College of the Arts. Previously, he served as the director of BFA Communication Design at Parsons School of Design, from 2017 to 2020. He was appointed as TED Senior Fellow and worked as a research fellow at SENSEable City Laboratory of MIT. </p>
+      <div class="external_links">
+        <a href="https://eroonkang.com/" target="_blank">eroonkang.com</a> | <a href="https://math-practice.org" target="_blank">math-practice.org</a> | <a href="https://908a.org/" target="_blank">908a.org</a>
+      </div>
+    </div>
+  </section>
 
   <div id="container">
     <!-- <canvas id="myCanvas"></canvas> -->
   </div>
   <script src="JS/script.js"></script>
+
+
 
 </body>
 

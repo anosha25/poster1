@@ -1,29 +1,47 @@
-
+/* 
+#newRhombus{
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  top: 20px;
+  left: 100px;
+  background-color: pink;
+  offset: left 200px;
+} */
 #tri{
-width: 500px;
-height: 500px;
-background:black ;
+
+position: absolute;
+top: 200px;
+left: 120px;
+transform: rotate(-10deg);
+width: 1000px;
+height: 800px;
+background:transparent;
+border: solid black;
+border-right: solid black;
+
+stroke-width: 3;
+clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 0% 100%);
+
+}
+
+#tri:hover{
+  background: black;
 }
 
 #tri.clicked {
   animation: rotate 0.2s;
   animation-iteration-count: 1;
-  clip-path: polygon(80% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 @keyframes  rotate {
-  0% {clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
-  100% {clip-path: polygon(80% 0%, 80% 0%, 100% 100%, 0% 100%);}
-
+  0% {clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 0% 100%);} 
+  100% {clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
 
 }
 
-#myTri {
-  clip-path: polygon(80% 0%, 80% 0%, 100% 100%, 0% 100%);
-  width: 500px;
-  height: 500px;
-  background:red ;
-}
+
 
 
 #triangle {
@@ -38,7 +56,7 @@ background:black ;
 .shape {
 fill:transparent; 
 stroke:black; 
-stroke-width: 3;
+stroke-width: 5;
 transition: all 0.2s ease; 
 
 }
@@ -70,16 +88,48 @@ line-height: 40px;
   color: white;
   font-size: 30px;
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 150px;
   width: 1200px;
   transform: rotate(-4deg);
 }
 
+#e_roon_kang{
+  font-size: 70px;
+font-family: "angie-sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+line-height: 40px;
+  z-index: 1;
+  display: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 900px;
+  transform: rotate(-10deg);
+
+}
+
+#takahashi_kuan {
+  font-size: 70px;
+font-family: "angie-sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+line-height: 40px;
+  z-index: 1;
+  display: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 550px;
+  width: 900px;
+}
 
 
 button {
-  float: right;
   background-color: black;
   border: none;
   color:#c6e906;
@@ -90,13 +140,31 @@ button {
   font-size: 30px;
 }
 
+#exitAnther{
+  position: relative;
+  top: 10px;
+  left: 1190px;
+}
+
+#exitEmi{
+  position: relative;
+  top: 50px;
+  left: 890px;
+}
+
+#exitERoon{
+  position: relative;
+  top: 60px;
+  left: 900px;
+}
+
 body {
   background-color: #a99fb5;
 }
 
 #titles {
   
-  z-index: 2; 
+  z-index: 1; 
   color: #c6e906; 
   pointer-events:none;
 
@@ -117,7 +185,7 @@ body {
 
 .circle2{
   position: absolute;
-    border: 3px solid black;
+    border: 5px solid black;
     background-color: transparent;
     width: 600px;
     height: 600px;
@@ -157,4 +225,8 @@ h2 {
     
   margin: auto;
   text-align: center;
+}
+
+#pointyGuy.clicked {
+  fill: black;
 }
