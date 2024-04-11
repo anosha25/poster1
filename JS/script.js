@@ -186,5 +186,3 @@ document.addEventListener('mousemove', function(e) {
         title.style.fontVariationSettings = `'wdth' ${calculatedWidth}`;
     });
 });
-
-

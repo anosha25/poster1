@@ -37,7 +37,7 @@
 .tri-line{
   transform: rotate(35deg);
   position: absolute;
-  top: 602px;
+  top: 472px;
   left: 205px;
   height: 2px;
   width: 998px; 
@@ -47,7 +47,7 @@
 
 #tri{
   position: absolute;
-top: 250px;
+top: 120px;
 left: 350px;
 transform: rotate(-10deg);
 width: 700px;
@@ -115,7 +115,7 @@ transition: all 0.2s ;
 }
 
 #e_roon_kang{
-  top: 250px;
+  top: 120px;
   left: 390px;
   width: 700px;
   transform: rotate(-10deg);
@@ -123,8 +123,8 @@ transition: all 0.2s ;
 }
 
 #takahashi_kuan {
-  top: 9%;
-  left: 57.8%;
+  top: 5%;
+  left: 59%;
   width: 570px;
 
 }
@@ -181,23 +181,23 @@ h1 {
 }
 
         #Research{ 
-          top: -5%;
+          top: -50px;
           left: 10%;
         }
         #Methods{
-          top: 7%;
+          top: 70px;
           left: 20%;
         }
         #of{
-          top: 28%;
+          top: 250px;
           left: 12%;
         }
         #Graphic{
-          top: 39%;
+          top: 370px;
           left: 25%;
         }
         #Design{
-          top: 52%;
+          top: 500px;
           left: 40%;
         }
 
@@ -264,7 +264,7 @@ h2 {
   border: solid black 4px;
   position: absolute;
   left: 55%;
-  top: 5%;
+  top: 0%;
   transform: scale(60%) skewY(40deg) rotate(0deg);
 }
 
@@ -277,4 +277,3 @@ h2 {
   top: 5%;
   transform: scale(90%) skewY(0deg); <- this
 } */
-
