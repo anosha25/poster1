@@ -1,139 +1,190 @@
-$(document).ready(function(){
+var rhombusClicked = false; 
+var circleClicked = false;
+var triClicked = false;  
+var diClicked = false;
+
+function setupHoverR($element) {
+        $element.hover(function () {
+            $(this).css("background-color", "black");
+        }, function () {
+            if (!rhombusClicked) {
+                $(this).css("background-color", "transparent");
+            }
+        });
+
+        $element.click(function() {
+            $(this).css('background-color', 'black');
+            rhombusClicked = true; 
+        });
+
+        $("#exitSeb, #circle, #tri, #diamond").click(function() {
+            $element.css('background-color', 'transparent');
+            rhombusClicked = false;
+        });
+    }
+
+    function setupHoverC($element) {
+            $element.hover(function () {
+                $(this).css("background-color", "black");
+            }, function () {
+                if (!circleClicked) {
+                    $(this).css("background-color", "transparent");
+                }
+            });
     
-        $(".circle2").click(function(){
-            $('#exitAnther').show();
-            $(this).css('background-color', 'black');
-            $('#anther_kiley').fadeIn();
-            $(this).animate({
-                'border-radius': '10px',
-                left: '100px',
-                height: '700px',
-                width: '1300px',
-                'z-index': '1'
-            
+            $element.click(function() {
+                $(this).css('background-color', 'black');
+                circleClicked = true; 
+            });
+    
+            $("#exitAnther, #rhombusNew, #tri, #pointyGuy").click(function() {
+                $element.css('background-color', 'transparent');
+                circleClicked = false;
+            });
+        }
+
+        function setupHoverT($element) {
+                $element.hover(function () {
+                    $(this).css("background-color", "black");
+                }, function () {
+                    if (!triClicked) {
+                        $(this).css("background-color", "transparent");
+                    }
+                });
+        
+                $element.click(function() {
+                    $(this).css('background-color', 'black');
+                    triClicked = true; 
+                });
+        
+                $("#exitERoon, #circle,  #rhombusNew, #pointyGuy").click(function() {
+                    $element.css('background-color', 'transparent');
+                    triClicked = false;
+                });
+            }
+
+            function setupHoverD($element) {
+                $element.hover(function () {
+                    $(this).css("background-color", "black");
+                }, function () {
+                    if (!diClicked) {
+                        $(this).css("background-color", "transparent");
+                    }
+                });
+        
+                $element.click(function() {
+                    $(this).css('background-color', 'black');
+                    diClicked = true; 
+                });
+        
+                $("#exitEmi, #circle, #tri, #rhombusNew").click(function() {
+                    $element.css('background-color', 'transparent');
+                    diClicked = false;
+                });
+            }
+
+
+$(document).ready(function() {
+    setupHoverR($("#rhombusNew"));
+    $("#rhombusNew").click(function() {
+        $(this).css('background-color', 'black');
+        $(this).css('transform', 'skew(0rad)');
+        $(this).animate({
+            'height': '610px',
+            'width' : '750px'
+        }, function(){
+            $('#sebastian_aubin').fadeIn(1000);
         });
-        $("#exitAnther").click(function(){
-            $('#exitAnther').hide();
-            $("#anther_kiley").hide();
-            $(".circle2").css('background-color', 'transparent');
-                // $(".circle2").hover('background-color', 'black');
-
-                $(".circle2").animate({
-                    'z-index': '0',
-                    'position': 'absolute',
-                    'border': '3px solid black',
-                    // 'background-color': 'transparent',
-                    'width':'600px',
-                    'height': '600px',
-                    'top': '200px',
-                    'left': '700px',
-                    'border-radius': '500px',
-                    'transform': 'rotate(-4deg)'
-                })
-
-        })
-        }); 
+});
+    $("#exitSeb, #circle, #tri, #diamond").click(function(){
+        $('#sebastian_aubin').hide();
+        $("#rhombusNew").css('background-color', 'transparent');
+        $("#rhombusNew").css('transform', 'skew(-.4rad)');
+        $("#rhombusNew").animate({
+            'height': '500px',
+            'width' : '600px'
+        });
+    });
 
 
-        $("#tri").click(function(){
-            $(this).css('background-color', 'black');
-            $(this).css('z-index', '1');
+
+
+
+setupHoverT($("#tri"));
+
+    $("#tri").click(function() {
+        $(".tri-line").hide();
+        $(this).css({
+            'background-color': 'black',
+        }).animate({
+            'width':'800', 
+            clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
+        }, function() {
             $("#e_roon_kang").fadeIn();
-        })
-        
-        
         });
+    });
+    
+setupHoverC($("#circle"));
 
-        $("#exitERoon").click(function(){
-            $("#e_roon_kang").hide();
-            $("#tri").removeClass('clicked');
-            $("#tri").css('background-color', 'transparent');
-
-        })
-
-        // $(document).ready(function(){
-        //     $("#pointyGuy").click(function(){
-        //         $(this).animate({
-        //             'dummy': 1 // Dummy property to trigger animation
-        //         }, {
-        //             step: function(now, fx) {
-        //                 $(this).attr('points', '100,50 1000,50  1000,710  100,710');
-        //             },
-        //             duration: 1000 // Adjust the duration as needed
-        //         });
-        //     });
-        // });
+$("#circle").click(function() {
+    $(this).animate({
+        'border-radius': '0px',
+        'width': '800px',
+        'z-index': '1'
+    }, function(){
+        $('#anther_kiley').fadeIn();
+    });
+});
 
 
+$("#exitAnther, #rhombusNew, #tri, #diamond").click(function() {
+    $("#circle").css('background-color', 'transparent');
+    $("#anther_kiley").hide();
+    $("#circle").animate({
+        'border-radius': '500px',
+        'width': '600px',
+    });
+});
+$("#exitERoon, #circle,  #rhombusNew, #diamond").click(function() {
+    $(".tri-line").fadeIn();
+     $("#e_roon_kang").hide();
+    $("#tri").removeClass('clicked');
+    $('#tri').css('background', 'transparent')
+    $("#tri").css('width', '700');
+   });
 
-        $(document).ready(function(){
-            $("#pointyGuy").click(function(){
-                console.log("PointyGuy clicked!");
-                $(this).addClass('clicked');
-                $("#takahashi_kuan").fadeIn();
-                $("#titles").css('z-index', '-1');   
-                $(this).css('z-index', '1');                
-             
-            });
-          });
+   
+   setupHoverD($("#diamond"));
 
-          $(document).ready(function(){
-            $("#exitEmi").click(function(){
-                $("#pointyGuy").attr('points', '1270,10 1750,600 1590,900 1250,750');
-                $("#pointyGuy").removeClass('clicked');
-                $("#takahashi_kuan").fadeOut(); 
-                $("#titles").css('z-index', '2'); 
-            });
-        });
+   $("#diamond").click(function() {
+    $(this).css('transform', 'skewY(0deg) scale(90%)');
+    $(this).animate({
+        'transform' : 'rotate(20deg)'
+    }, function(){
+        $('#takahashi_kuan').fadeIn('fast');
+    });
+});
 
-
-          $(document).ready(function(){
-            console.log("Document is ready!");
-        });
-        
+$("#exitEmi, #circle, #tri, #rhombusNew").click(function(){
+    $('#takahashi_kuan').hide();
+    $("#diamond").css('background-color', 'transparent');
+    $("#diamond").css('transform', 'scale(60%) skewY(40deg)');
+});
 
 
 
+});
 
-//     $(".shape").click(function(){
-//         if ($(this).is('circle')) { 
-//             $(this).css('display', 'none'); 
-//             $("#recCircle").css('display', 'inline');
-//         } else if ($(this).is('#rhombus')) {
-//             $(this).attr('points', '300,10 900,10 720,490 100,490');
-//             var animateElement = document.createElementNS("http://www.w3.org/2000/svg", "animate");
-//             animateElement.setAttribute("attributeName", "points");
-//             animateElement.setAttribute("dur", "2s");
-//             animateElement.setAttribute("repeatCount", "1");
-//             animateElement.setAttribute("values", "300,10 900,10 720,490 100,490;" +
-//             "100,50 1000,50  1000,710  100,710;");
-//             $("#titles").hide();
+document.addEventListener('mousemove', function(e) {
+    const widthPercentage = e.clientX / window.innerWidth;
+    const maxWidthVariation = 50; 
+    const minWidthVariation = 140; 
+    const calculatedWidth = minWidthVariation + (maxWidthVariation - minWidthVariation) * widthPercentage;
 
-//             $(this).append(animateElement);
-//         } else if ($(this).is('#pointyGuy')) {
-//             $(this).attr('points', '1270,10 1750,600 1590,900 1250,750');
-//             var animateElement = document.createElementNS("http://www.w3.org/2000/svg", "animate");
-//             animateElement.setAttribute("attributeName", "points");
-//             animateElement.setAttribute("dur", "2s");
-//             animateElement.setAttribute("repeatCount", "1");
-//             animateElement.setAttribute("values", "1270,10 1750,600 1590,900 1250,750;" +
-//                                                    "100,50 2000,50  2000,910  100,910;");
-//             $("#titles").hide();
+    const titles = document.querySelectorAll('.titles');
+    titles.forEach(title => {
+        title.style.fontVariationSettings = `'wdth' ${calculatedWidth}`;
+    });
+});
 
-                                                   
-//             $(this).append(animateElement);
-//         } else if ($(this).is('#triangle')) {
-//         $(this).attr('points', '120,300 850,800 850,800 230,910');
-//         var animateElement = document.createElementNS("http://www.w3.org/2000/svg", "animate");
-//         animateElement.setAttribute("attributeName", "points");
-//         animateElement.setAttribute("dur", "2s");
-//         animateElement.setAttribute("repeatCount", "1");
-//         animateElement.setAttribute("values", "120,300 850,800 850,800 230,910;" +
-//                                                "100,50 1000,50  1000,710  100,710;");
-//                                                $("#titles").hide();
-
-//         $(this).append(animateElement);
-//     }
-//         $(this).css('fill', 'black');     
-//     });
 

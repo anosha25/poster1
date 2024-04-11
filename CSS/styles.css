@@ -1,28 +1,57 @@
-/* 
-#newRhombus{
-  position: absolute;
-  width: 800px;
-  height: 500px;
-  top: 20px;
-  left: 100px;
-  background-color: pink;
-  offset: left 200px;
-} */
 
 @font-face {
-  font-family: myFirstFont;
-  src: url(LouizeTrial-Italic.otf);
+  font-family: LouizeTrial-Regular ;
+  src: url('fonts/LouizeTrial-Regular.otf');
+}
+
+
+#sebastian_aubin{
+  width: 690px;
+  left: 10%;
+  top: 5%;
+}
+
+#exitSeb{
+  position: absolute;
+  left: 90%;
+  
+}
+
+#rhombusNew{
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  top: 5%;
+  margin-bottom: 1%;
+  left: 8%;
+  background: transparent;
+  border: solid black;
+  transform: skew(-.4rad);
+}
+#rhombusNew:hover{
+  background-color: black;
+}
+
+
+
+.tri-line{
+  transform: rotate(35deg);
+  position: absolute;
+  top: 602px;
+  left: 205px;
+  height: 2px;
+  width: 998px; 
+  background: black;
+  offset: 20px;
 }
 
 #tri{
-
-position: absolute;
-top: 200px;
-left: 120px;
+  position: absolute;
+top: 250px;
+left: 350px;
 transform: rotate(-10deg);
-width: 1000px;
-height: 800px;
-background:transparent;
+width: 700px;
+height: 700px;
 border: solid black;
 border-right: solid black;
 
@@ -30,6 +59,7 @@ stroke-width: 3;
 clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 0% 100%);
 
 }
+
 
 #tri:hover{
   background: black;
@@ -48,22 +78,10 @@ clip-path: polygon(0% 0%, 0% 0%, 100% 100%, 0% 100%);
 }
 
 
-
-
-#triangle {
-  transition: points 0.5s ease;
-  z-index: auto; 
-}
-
-#rhombus {
-  z-index: auto;
-}
-
 .shape {
-fill:transparent; 
 stroke:black; 
-stroke-width: 5;
-transition: all 0.2s ease; 
+stroke-width: .2em;
+transition: all 0.2s ; 
 
 }
 
@@ -71,67 +89,44 @@ transition: all 0.2s ease;
   fill: black;
 }
 
-#recCircle{
-  display: none;
-}
-
-#triangle, #rhombus, #circle {
-  transition: all 0.2s ease; 
-}
 
 .external_links a {
   color: #c6e906;
 }
 
-#anther_kiley {
-  font-size: 70px;
-font-family: "angie-sans", sans-serif;
-font-weight: 400;
-font-style: normal;
-line-height: 40px;
-  z-index: 1;
+.event{
   display: none;
+  font-size: 70px;
+  font-family: LouizeTrial-Regular;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 40px;
   color: white;
   font-size: 30px;
   position: absolute;
-  top: 200px;
-  left: 150px;
-  width: 1200px;
+  z-index: 2;
+}
+
+#anther_kiley {
+  top: 22%;
+  left: 41.5%;
+  width: 750px;
   transform: rotate(-4deg);
 }
 
 #e_roon_kang{
-  font-size: 70px;
-font-family: "angie-sans", sans-serif;
-font-weight: 400;
-font-style: normal;
-line-height: 40px;
-  z-index: 1;
-  display: none;
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 150px;
-  left: 150px;
-  width: 900px;
+  top: 250px;
+  left: 390px;
+  width: 700px;
   transform: rotate(-10deg);
 
 }
 
 #takahashi_kuan {
-  font-size: 70px;
-font-family: "angie-sans", sans-serif;
-font-weight: 400;
-font-style: normal;
-line-height: 40px;
-  z-index: 1;
-  display: none;
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 10px;
-  left: 550px;
-  width: 900px;
+  top: 9%;
+  left: 57.8%;
+  width: 570px;
+
 }
 
 
@@ -147,84 +142,100 @@ button {
 }
 
 #exitAnther{
-  position: relative;
-  top: 10px;
-  left: 1190px;
+  position: absolute;
+  top: 3%;
+  left: 90%;
 }
 
 #exitEmi{
-  position: relative;
-  top: 50px;
-  left: 890px;
+  position: absolute;
+  top: 3%;
+  left: 90%;
 }
 
 #exitERoon{
-  position: relative;
-  top: 60px;
-  left: 900px;
+  position: absolute;
+  top: 3%;
+  left: 95%;
 }
 
 body {
   background-color: #a99fb5;
 }
 
-#titles {
-  
-  z-index: 1; 
+.titles {
+  z-index: -5;
   color: #c6e906; 
   pointer-events:none;
-
 }
 
-
-#triangle-up {
-  z-index: auto;
-  position: absolute;
-  top: 220px;
-  left: 150px;
-  width: 0;
-  height: 0;
-  border-top: 600px solid black;
-      border-right: 600px solid transparent;
-  transform: rotate(-100deg);
+h1 {
+  font-family: "manop-variable", sans-serif;
+  font-variation-settings: "wdth" 50 140 , "wght" 500;
+  transition: font-variation-settings 0.3s ease;
+  z-index: -5;
+  position: absolute; 
+  letter-spacing: 6px;
+  font-style: normal;
+  font-size: 150px;
 }
 
-.circle2{
+        #Research{ 
+          top: -5%;
+          left: 10%;
+        }
+        #Methods{
+          top: 7%;
+          left: 20%;
+        }
+        #of{
+          top: 28%;
+          left: 12%;
+        }
+        #Graphic{
+          top: 39%;
+          left: 25%;
+        }
+        #Design{
+          top: 52%;
+          left: 40%;
+        }
+
+#circle:hover{
+  background-color: black;
+}
+#circle{
   position: absolute;
-    border: 5px solid black;
-    background-color: transparent;
+    border: 2.5px solid black;
     width: 600px;
     height: 600px;
-    top: 200px;
-    left: 700px;
+    top: 22%;
+    left: 40%;
     border-radius: 500px;
     transform: rotate(-4deg);
+    margin-bottom: 1%;
+
 
 }
 
-.circle2:hover{
-   background-color: black;
+
+
+p {
+  font-size: 20px;
 }
-h1 {
-  position: absolute;
-  top: 100px; 
-  left: 20px; 
-  font-family: "termina", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100px;
-}
+
 
 h2 {
+  z-index: -5;
   line-height: 80px;
   position: absolute;
-  top: 380px; 
-  left: 1310px; 
+  top: 27%; 
+  left: 65%; 
   font-size: 50px;
-  font-family: myFirstFont;
-  font-weight: 400;
+  font-family: LouizeTrial-Regular;
+  font-weight: lighter;
   font-style: normal;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 
@@ -234,6 +245,36 @@ h2 {
   text-align: center;
 }
 
-#pointyGuy.clicked {
-  fill: black;
+
+/* .diamond {
+  position: absolute;
+  top:  10%;
+  left: 60%;
+  width: 500px;
+  height: 700px;
+  background-color: red;
+  transform: skew(30deg);
+
+  
+} */
+
+#diamond {
+  height: 900px;
+  width: 700px;
+  border: solid black 4px;
+  position: absolute;
+  left: 55%;
+  top: 5%;
+  transform: scale(60%) skewY(40deg) rotate(0deg);
 }
+
+/* #diamond {
+  height: 900px;
+  width: 700px;
+  border: solid black;
+  position: absolute;
+  left: 55%;
+  top: 5%;
+  transform: scale(90%) skewY(0deg); <- this
+} */
+

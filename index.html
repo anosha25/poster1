@@ -10,13 +10,34 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/mce6vyv.css">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="icon.png">
   </head>
 
 <body>
-  <div class="circle2"></div>
-  <section class="event" id="anther_kiley">
-    <button id="exitAnther">X</button>
+
+  <div class="shape" id="circle"></div>
+  <div class="shape" id="rhombusNew"></div>
+  <div class="triangle-container">
+        <div class="shape" id="tri" onclick="this.classList.toggle('clicked')"></div>
+        <div class="tri-line"></div>
+  </div>
+<div class="shape" id="diamond"></div>
+
+
+
+  <div class="titles">
+    <h1 id="Research"> RESEARCH</h1>
+    <h1 id="Methods"> METHODS</h1>
+    <h1 id="of">OF</h1>
+    <h1 id="Graphic">GRAPHIC</h1>
+    <h1 id="Design">DESIGN</h1>
+    <h2>FALL 2023 <br> LECTURE SERIES</h2>
+  </div>
+
+    
+
+ <section class="event" id="anther_kiley">
+    <button id="exitAnther">&times;</button>
     <h3>Anther Kiley</h3>
     <div class="date">September 25, 2023</div>
     <div class="time">3:10pm</div>
@@ -27,44 +48,10 @@
         <a href="http://antherkiley.com/">antherkiley.com</a>
       </div>
     </div>
-  </section>
-
-  
-  <!-- <div id="triangle-up"></div> -->
-  <div id="tri" onclick="this.classList.toggle('clicked')"></div>
-  
-  <div id="titles">
-    <h1>Research Methods <br> of<br> Graphic Design</h1>
-    <h2>Fall 2023 <br> Lecture Series</h2>
-    
-  </div>
-  <svg height="1000" width="2000" xmlns="http://www.w3.org/2000/svg">
-     <!-- <polygon id="triangle" class="shape" points="120,300 850,800 850,800 230,910"/> 
-       <triangle dur="5s" repeatCount="definite" 
-      values="100,50 1000,50  1000,710  100,710;
-              120,300 850,800 850,800 230,910;" />
-    </polygon>  -->
-
-    <polygon id="rhombus" class="shape" points="300,10 900,10 720,490 100,490" />
-      <!-- <rhombus ="points" dur="5s" repeatCount="definite" 
-      values="100,50 1000,50  1000,710  100,710;
-      1275,15 1755,605 1595,905 1255,755;
-      1270,10 1750,600 1590,900 1250,750" />
-    </polygon> -->
-
-    <!-- <circle id="circle" class="shape" r="320" cx="1000" cy="480" />
-    <polygon id="recCircle" points="100,50 1000,50  1000,710  100,710" /> -->
-
-    <polygon id="pointyGuy" class="shape" points="1270,10 1750,600 1590,900 1250,750" >
-      <animate attributeName="points" dur="0.5s" begin="click" fill="freeze"
-               from="1270,10 1750,600 1590,900 1250,750"
-               to="500,50 1500,50  1500,910  500,910" />
-    </polygon>
-  </svg>
-
+</section>
  
-  <section class="event" id="takahashi_kuan">
-    <button id="exitEmi">X</button>
+<section class="event" id="takahashi_kuan">
+    <button id="exitEmi">&times;</button>
     <h3>Emi Takahashi & Michelle Kuan</h3>
     <div class="date">October 23, 2023</div>
     <div class="time">3:10pm</div>
@@ -74,11 +61,11 @@
       <div class="external_links">
         <a href="https://emitakahashi.ca/" target="_blank">emitakahashi.ca</a>
       </div>
-    </div>s
-  </section>
+    </div>
+</section>
 
-  <section class="event" id="e_roon_kang">
-    <button id="exitERoon">X</button>
+<section class="event" id="e_roon_kang">
+    <button id="exitERoon">&times;</button>
     <h3>E Roon Kang</h3>
     <div class="date">November 13, 2023</div>
     <div class="time">3:10pm</div>
@@ -90,15 +77,22 @@
         <a href="https://eroonkang.com/" target="_blank">eroonkang.com</a> | <a href="https://math-practice.org" target="_blank">math-practice.org</a> | <a href="https://908a.org/" target="_blank">908a.org</a>
       </div>
     </div>
-  </section>
+</section>
 
-  <div id="container">
-    <!-- <canvas id="myCanvas"></canvas> -->
-  </div>
+<section class="event" id="sebastian_aubin">
+  <button id="exitSeb">&times;</button>
+  <h3>Sebastian Aubin</h3>
+  <div class="date">December 4, 2023</div>
+  <div class="time">3:10pm</div>
+  <div class="location">100 McCaul St., Room 230</div>
+  <div class="info">
+    <p> Aubin has done publications for numerous artists, organizations and art galleries in Winnipeg, Montréal and Ottawa, including Plug In ICA Close Encounters, the next 500 years, Terrance Houle, KC Adams, Carleton University Art Gallery, Thunder Bay Art Gallery, and Art Gallery of South Western Manitoba. Aubin is one of the founding members of the ITWÉ collective that is dedicated to research, creation, production and education of Aboriginal digital culture. Currently based in Montréal, QC, Sébastien Aubin is a proud member of the Opaskwayak Cree Nation in Manitoba. </p>
+    <div class="external_links">
+      <a href="https://saubin.ca" tagret="_blank">saubin.ca</a>
+    </div>
+</section>
+
   <script src="JS/script.js"></script>
-
-
-
 </body>
 
 </html>
