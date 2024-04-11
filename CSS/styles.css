@@ -1,4 +1,14 @@
 
+body { 
+  zoom: 90%; 
+  -moz-transform: scale(0.9); 
+  -moz-transform-origin: 0 0; 
+  -o-transform: scale(0.9); 
+  -o-transform-origin: 0 0; 
+  -webkit-transform: scale(0.9); 
+  -webkit-transform-origin: 0 0; 
+} 
+
 @font-face {
   font-family: LouizeTrial-Regular ;
   src: url('fonts/LouizeTrial-Regular.otf');
@@ -123,7 +133,7 @@ transition: all 0.2s ;
 }
 
 #takahashi_kuan {
-  top: 5%;
+  top: 40px;
   left: 59%;
   width: 570px;
 
