@@ -8,7 +8,8 @@
   }
   
   #exitSeb{
-    float: right;
+    position: fixed;
+    left: 95%;
     
   }
   
@@ -113,16 +114,16 @@
   #e_roon_kang{
     left: 70px;
     height: 250px;
-    top: 460px;
+    top: 490px;
     width: 380px;
   
   }
   
   #takahashi_kuan {
     top: 820px;
-    left: 10px;
+    left: 50px;
     width: 340px;
-    height: 300px;
+    height: 260px;
     overflow: auto;
   
   }
@@ -132,7 +133,6 @@
     background-color: black;
     border: none;
     color:#c6e906;
-    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -140,19 +140,17 @@
   }
   
   #exitAnther{
-    position: absolute;
-    top: 3%;
-    left: 90%;
+    position: fixed;
+    left: 380px;
+    top: 220px;
   }
   
   #exitEmi{
-    position: absolute;
     top: 3%;
     left: 90%;
   }
   
   #exitERoon{
-    position: absolute;
     top: 3%;
     left: 95%;
   }
@@ -216,12 +214,12 @@
   
   
   #diamond {
-    height: 400px;
+    height: 310px;
     width: 300px;
     border: solid black 4px;
     position: absolute;
-    left: -20px;
-    top: 770px;
+    left: 10px;
+    top: 790px;
     transform: scale(60%) skewY(40deg) rotate(0deg);
   }
 }
