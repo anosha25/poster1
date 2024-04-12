@@ -285,19 +285,20 @@ function setupHoverR($element) {
 
 document.addEventListener('mousemove', function(e) {
     const widthPercentage = e.clientX / window.innerWidth;
-    const maxWidthVariation = 50; 
+    const maxWidthVariation = 40; 
     const minWidthVariation = 140; 
     const calculatedWidth = minWidthVariation + (maxWidthVariation - minWidthVariation) * widthPercentage;
 
     const titles = document.querySelectorAll('.titles');
     titles.forEach(title => {
         title.style.fontVariationSettings = `'wdth' ${calculatedWidth}`;
+        title.style.fontVariationSettings = `'wght' 900, 'wdth' ${calculatedWidth}`;
+
     });
 });
 
 myFunction(x);
               
-// Attach listener function on state changes
 x.addEventListener("change", function() {
   myFunction(x);
 });

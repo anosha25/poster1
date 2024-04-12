@@ -166,15 +166,16 @@
   }
   
   h1 {
+      font-family: "manop-variable",sans-serif;
+      font-variation-settings: 'wght' 900, 'wdth' 140;
     color: #c6e906;
-    line-height: 2em;
-    font-family: "manop-variable", sans-serif;
+    line-height: 1.2em;
     font-weight: 500;
     z-index: -5;
     position: absolute; 
-    letter-spacing: 6px;
+    kerning: -110px;
     font-style: normal;
-    font-size: 90px;
+    font-size: 440%;
   }
 
   h2 {
@@ -182,8 +183,8 @@
     z-index: -5;
     line-height: 1em;
     position: absolute;
-    top: 350px; 
-    left: 60%; 
+    top: 140px; 
+    left: 150px; 
     font-size: 50px;
     font-family: LouizeTrial-Regular;
     font-weight: lighter;
@@ -356,7 +357,7 @@ transition: all 0.2s ;
 
 
 .external_links a {
-  color: #c6e906;
+  color: hotpink;
 }
 
 .event{
@@ -434,9 +435,14 @@ body {
   pointer-events:none;
 }
 
+/* .example {
+  font-family: "manop-variable",sans-serif;
+  font-variation-settings: 'wght' 900, 'wdth' 140;
+} */
+
 h1 {
   font-family: "manop-variable", sans-serif;
-  font-variation-settings: "wdth" 50 140 , "wght" 500;
+  font-variation-settings: "wght" 900, "wdth" 40 140 ;
   transition: font-variation-settings 0.3s ease;
   z-index: -5;
   position: absolute; 
