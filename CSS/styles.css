@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   
   #sebastian_aubin{
     width: 350px;
@@ -263,7 +263,7 @@ body {
 
 
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
 
   #mobile-titles{
     display: none;

@@ -37,7 +37,7 @@ function setupHoverR($element) {
                 circleClicked = true; 
             });
     
-            $("#exitAnther, #rhombusNew, #tri, #pointyGuy").click(function() {
+            $("#exitAnther, #rhombusNew, #tri, #diamond").click(function() {
                 $element.css('background-color', 'transparent');
                 circleClicked = false;
             });
@@ -57,7 +57,7 @@ function setupHoverR($element) {
                     triClicked = true; 
                 });
         
-                $("#exitERoon, #circle,  #rhombusNew, #pointyGuy").click(function() {
+                $("#exitERoon, #circle,  #rhombusNew, #diamond").click(function() {
                     $element.css('background-color', 'transparent');
                     triClicked = false;
                 });
@@ -278,7 +278,7 @@ function setupHoverR($element) {
               }
               
               // Create a MediaQueryList object
-              var x = window.matchMedia("(max-width: 500px)")
+              var x = window.matchMedia("(max-width: 800px)")
               
               // Call listener function at run time
 
