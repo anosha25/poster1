@@ -121,7 +121,7 @@
   
   #takahashi_kuan {
     top: 820px;
-    left: 50px;
+    left: 40px;
     width: 340px;
     height: 260px;
     overflow: auto;
@@ -130,7 +130,7 @@
   
   
   button {
-    background-color: black;
+    background-color: transparent;
     border: none;
     color:#c6e906;
     text-align: center;
@@ -146,13 +146,15 @@
   }
   
   #exitEmi{
-    top: 3%;
-    left: 90%;
+    position: fixed;
+    top: 810px;
+    left: 360px;
   }
   
   #exitERoon{
-    top: 3%;
-    left: 95%;
+    position: fixed;
+    top: 460px;
+    left: 417px;
   }
   
   body {
