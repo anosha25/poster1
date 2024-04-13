@@ -166,26 +166,32 @@
   }
   
   h1 {
-      font-family: "manop-variable",sans-serif;
-      font-variation-settings: 'wght' 900, 'wdth' 140;
+    position: fixed;
+    font-family: "manop-variable",sans-serif;
+    font-variation-settings: 'wght' 800, 'wdth' 140;
     color: #c6e906;
     line-height: 1.2em;
     font-weight: 500;
     z-index: -5;
-    position: absolute; 
     kerning: -110px;
     font-style: normal;
-    font-size: 440%;
+    font-size: 50px;
+    text-align: left;
+    left: 70px;
+    top: 200px;
   }
 
   h2 {
-    color: hotpink;
+    color: black;
+  -webkit-text-fill-color: #a99fb5; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #c6e906;
     z-index: -5;
     line-height: 1em;
-    position: absolute;
-    top: 140px; 
+    position: fixed;
+    top: 330px; 
     left: 150px; 
-    font-size: 50px;
+    font-size: 25px;
     font-family: LouizeTrial-Regular;
     font-weight: lighter;
     font-style: normal;
